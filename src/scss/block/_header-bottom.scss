@@ -1,0 +1,122 @@
+.header__bottom {
+  padding: 10px 0;
+  background-color: #ffffff;
+  position: relative;
+  .wrapper {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 2fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 1200px) {
+      grid-template-columns: auto auto auto;
+    }
+    @media (max-width: 700px) {
+      grid-template-columns: auto;
+      justify-content: center;
+    }
+    @media (max-width: 400px) {
+      gap: 15px;
+    }
+  }
+}
+
+.header__logo {
+  display: grid;
+  gap: 15px;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  max-width: 340px;
+  @media (max-width: 1200px) {
+    grid-template-columns: 1fr;
+    max-width: 151px;
+  }
+  @media (max-width: 700px) {
+    margin: 0 auto;
+  }
+  img {
+    display: block;
+  }
+  p {
+    margin: 0;
+    max-width: 200px;
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+}
+
+.header__social {
+  display: grid;
+  grid-template-columns: 171px 200px;
+  gap: 75px;
+  align-items: center;
+  @media (max-width: 1200px) {
+    gap: 15px;
+  }
+  @media (max-width: 400px) {
+    grid-template-columns: auto;
+  }
+}
+
+.header__buttons {
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  gap: 24px;
+  align-items: center;
+  margin: 0 auto;
+  margin-right: 0;
+  @media (max-width: 1200px) {
+    grid-template-columns: 1fr;
+    max-width: 50px;
+    margin: 0;
+  }
+  @media (max-width: 700px) {
+    display: none;
+  }
+}
+
+.header__tel {
+  font-weight: 700;
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+  a {
+    display: block;
+    color: inherit;
+    text-decoration: inherit;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+}
+
+.header__button {
+  @media (max-width: 1200px) {
+    display: none;
+  }
+  a {
+    font-size: 14px;
+    padding: 15px 25px;
+    display: block;
+  }
+}
+
+.header__search {
+  a {
+    display: block;
+  }
+  svg {
+    width: 50px;
+    height: auto;
+    @media (max-width: 1200px) {
+      width: 35px;
+    }
+    rect {
+      fill: #237d26;
+    }
+
+    path {
+      fill: #ffffff;
+    }
+  }
+}
