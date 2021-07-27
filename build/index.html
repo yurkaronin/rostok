@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<!-- комментарий  -->
+<!-- комментарий  -->
 
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Gulp</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Росток: главная страница</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700;800&display=swap"
+    rel="stylesheet">
 
-	<link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/main.css" />
 </head>
 
 <body></body>
@@ -155,11 +157,1010 @@
 </header>
 
 <main>
+  <section class="first-screen">
+  <!-- Swiper -->
+  <div class="swiper-container mySwiper first-screen__slider top-slider">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide top-slider__item">
+        <img class="top-slider__image" src="./img/top-slider/1.jpg" alt="фото слайдера" width="1480" height="539">
+        <div class="top-slider__wrapper">
+          <h3 class="top-slider__item-title"><span>3000+</span> растений и саженцев
+            для озеленения вашего дома</h3>
+          <ul class="top-slider__item-list">
+            <li>3 Га - Садовый Центр в Курске</li>
+            <li>Здоровые красивые растения</li>
+            <li>Доставка по России</li>
+          </ul>
+          <a class="button-custom" href="#">Рассчитать стоимость</a>
+        </div>
+      </div>
+      <div class="swiper-slide top-slider__item">
+        <img class="top-slider__image" src="./img/top-slider/2.jpg" alt="фото слайдера" width="1480" height="539">
+        <div class="top-slider__wrapper">
+          <h3 class="top-slider__item-title"><span>500+</span> хвойников для стильного оформления вашего пространства
+          </h3>
+          <p class="top-slider__item-subtitle">От можжевельника до туи смарагд</p>
+          <ul class="top-slider__item-list">
+            <li>Живая изгородь из хвойников</li>
+            <li>Готовые композиции для участка, коттеджа, двора</li>
+            <li>100% красивых здоровых растений с доставкой по России</li>
+          </ul>
+          <a class="button-custom" href="#">Рассчитать стоимость</a>
+        </div>
+      </div>
+      <div class="swiper-slide top-slider__item">
+        <img class="top-slider__image" src="./img/top-slider/3.jpg" alt="фото слайдера" width="1480" height="539">
+        <div class="top-slider__wrapper">
+          <h3 class="top-slider__item-title">Самый широкий ассортимент <span>3000+</span> растений в Садовом Центре в Курске</h3>
+          <ul class="top-slider__item-list">
+            <li>Распродажа - скидки до 35%</li>
+            <li>От розы и яблони до туи</li>
+            <li>Доставка по России</li>
+          </ul>
+          <a class="button-custom" href="#">Рассчитать стоимость</a>
+        </div>
+      </div>
+      <div class="swiper-slide top-slider__item">
+        <img class="top-slider__image" src="./img/top-slider/4.jpg" alt="фото слайдера" width="1480" height="539">
+        <div class="top-slider__wrapper">
+          <h3 class="top-slider__item-title">Календарь посадки саженцев Лето-осень 2021</h3>
+          <p class="top-slider__item-list  top-slider__item-list--alone">Когда высаживать растения, чтобы они лучше прижились</p>
+          <a class="button-custom" href="#">Рассчитать стоимость</a>
+        </div>
+      </div>
+      <div class="swiper-slide top-slider__item">
+        <img class="top-slider__image" src="./img/top-slider/5.jpg" alt="фото слайдера" width="1480" height="539">
+        <div class="top-slider__wrapper">
+          <h3 class="top-slider__item-title"><span>700+</span> плодовых деревьев
+          для вашего сада и отдыха в тени</h3>
+          <ul class="top-slider__item-list">
+            <li>Сочные спелые фрукты в вашем дворе</li>
+            <li>Красивое цветение и нежный аромат</li>
+            <li>100% здоровых растений с доставкой по России</li>
+          </ul>
+          <a class="button-custom" href="#">Рассчитать стоимость</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="swiper-pagination top-slider__bullets"></div>
+  </div>
+</section>
+
+  <section class="main-catalog">
+  <div class="wrapper">
+    <h2 class="title">Катал<span class="decorate">о</span>г деревьев</h2>
+    <p class="main-catalog__subtitle">Для просмотра всех товаров отдельной группы просто выберите нужный пункт в
+      списке ниже</p>
+
+    <ul class="main-catalog__list">
+      <!-- Лиственные деревья -->
+      <li class="main-catalog__item">
+        <img class="main-catalog__photo" src="./img/main-catalog/1/1.jpg" alt="фотография каталога" width="485"
+          height="215">
+        <div class="main-catalog__item-header">
+          <h3 class="main-catalog__title">Лиственные деревья</h3>
+          <svg class="main-catalog__icon" width="17" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M.93 8.158l-.027-.006H11.96l-3.476 3.483c-.17.17-.263.4-.263.643 0 .241.093.47.263.64l.54.542c.171.17.398.264.64.264a.896.896 0 00.638-.264l5.958-5.957a.895.895 0 00.263-.64.895.895 0 00-.263-.642L10.302.263A.897.897 0 009.663 0a.897.897 0 00-.638.263l-.54.541a.895.895 0 00-.264.639c0 .242.093.456.263.626L12 5.572H.917A.936.936 0 000 6.5v.765c0 .498.431.894.93.894z"
+              fill="#fff" />
+          </svg>
+        </div>
+        <div class="main-catalog__details">
+          <ul class="main-catalog__category-list">
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Берёза
+              </a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Бук</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Ива</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Вяз</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Рябина</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Гинкго Билоба</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Боярышник</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Граб</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Дуб</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Катальпа</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Калина</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Каштан</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Клён</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Магнолия</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Липа</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Сакура</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Черёмуха</a>
+            </li>
+          </ul>
+          <a href="" class="main-catalog__button">Смотреть все
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 50 50">
+              <defs />
+              <rect width="50" height="50" rx="25" />
+              <path
+                d="M17.67 26.3l-.03-.01H28.7l-3.48 3.48a.9.9 0 00-.26.65c0 .24.1.47.26.64l.54.54a.9.9 0 001.28 0L33 25.64a.9.9 0 00.26-.64.9.9 0 00-.26-.64l-5.96-5.96a.9.9 0 00-.64-.26.9.9 0 00-.64.26l-.54.54a.9.9 0 000 1.27l3.52 3.5H17.66c-.5 0-.92.43-.92.93v.76c0 .5.43.9.93.9z" />
+            </svg>
+          </a>
+        </div>
+      </li>
+      <!-- Хвойные деревья -->
+      <li class="main-catalog__item">
+        <img class="main-catalog__photo" src="./img/main-catalog/1/2.jpg" alt="фотография каталога" width="485"
+          height="215">
+        <div class="main-catalog__item-header">
+          <h3 class="main-catalog__title">Хвойные деревья</h3>
+          <svg class="main-catalog__icon" width="17" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M.93 8.158l-.027-.006H11.96l-3.476 3.483c-.17.17-.263.4-.263.643 0 .241.093.47.263.64l.54.542c.171.17.398.264.64.264a.896.896 0 00.638-.264l5.958-5.957a.895.895 0 00.263-.64.895.895 0 00-.263-.642L10.302.263A.897.897 0 009.663 0a.897.897 0 00-.638.263l-.54.541a.895.895 0 00-.264.639c0 .242.093.456.263.626L12 5.572H.917A.936.936 0 000 6.5v.765c0 .498.431.894.93.894z"
+              fill="#fff" />
+          </svg>
+        </div>
+        <div class="main-catalog__details">
+          <ul class="main-catalog__category-list">
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Лиственница</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Сосна</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Туя</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Тис</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Ель</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Можжевельник</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Пихта</a>
+            </li>
+          </ul>
+          <a href="" class="main-catalog__button">Смотреть все
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 50 50">
+              <defs />
+              <rect width="50" height="50" rx="25" />
+              <path
+                d="M17.67 26.3l-.03-.01H28.7l-3.48 3.48a.9.9 0 00-.26.65c0 .24.1.47.26.64l.54.54a.9.9 0 001.28 0L33 25.64a.9.9 0 00.26-.64.9.9 0 00-.26-.64l-5.96-5.96a.9.9 0 00-.64-.26.9.9 0 00-.64.26l-.54.54a.9.9 0 000 1.27l3.52 3.5H17.66c-.5 0-.92.43-.92.93v.76c0 .5.43.9.93.9z" />
+            </svg>
+          </a>
+        </div>
+      </li>
+      <!-- Плодовые деревья -->
+      <li class="main-catalog__item">
+        <img class="main-catalog__photo" src="./img/main-catalog/1/3.jpg" alt="фотография каталога" width="485"
+          height="215">
+        <div class="main-catalog__item-header">
+          <h3 class="main-catalog__title">Плодовые деревья</h3>
+          <svg class="main-catalog__icon" width="17" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M.93 8.158l-.027-.006H11.96l-3.476 3.483c-.17.17-.263.4-.263.643 0 .241.093.47.263.64l.54.542c.171.17.398.264.64.264a.896.896 0 00.638-.264l5.958-5.957a.895.895 0 00.263-.64.895.895 0 00-.263-.642L10.302.263A.897.897 0 009.663 0a.897.897 0 00-.638.263l-.54.541a.895.895 0 00-.264.639c0 .242.093.456.263.626L12 5.572H.917A.936.936 0 000 6.5v.765c0 .498.431.894.93.894z"
+              fill="#fff" />
+          </svg>
+        </div>
+        <div class="main-catalog__details">
+          <ul class="main-catalog__category-list">
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Алыча</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Орех</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Нектарин</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Персик</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Слива</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Черешня</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Яблоня</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Абрикос</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Вишня</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Груша</a>
+            </li>
+
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Айва</a>
+            </li>
+          </ul>
+          <a href="" class="main-catalog__button">Смотреть все
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 50 50">
+              <defs />
+              <rect width="50" height="50" rx="25" />
+              <path
+                d="M17.67 26.3l-.03-.01H28.7l-3.48 3.48a.9.9 0 00-.26.65c0 .24.1.47.26.64l.54.54a.9.9 0 001.28 0L33 25.64a.9.9 0 00.26-.64.9.9 0 00-.26-.64l-5.96-5.96a.9.9 0 00-.64-.26.9.9 0 00-.64.26l-.54.54a.9.9 0 000 1.27l3.52 3.5H17.66c-.5 0-.92.43-.92.93v.76c0 .5.43.9.93.9z" />
+            </svg>
+          </a>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+  <section class="main-catalog">
+  <div class="wrapper">
+    <h2 class="title">Катал<span class="decorate">о</span>г декоративных кустарников</h2>
+
+    <ul class="main-catalog__list">
+      <!-- Лиственные и цветущие кустарники -->
+      <li class="main-catalog__item main-catalog__item--big">
+        <img class="main-catalog__photo" src="./img/main-catalog/2/1.jpg" alt="фотография каталога" width="485"
+          height="215">
+        <div class="main-catalog__item-header">
+          <h3 class="main-catalog__title">Лиственные и цветущие кустарники</h3>
+          <svg class="main-catalog__icon" width="17" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M.93 8.158l-.027-.006H11.96l-3.476 3.483c-.17.17-.263.4-.263.643 0 .241.093.47.263.64l.54.542c.171.17.398.264.64.264a.896.896 0 00.638-.264l5.958-5.957a.895.895 0 00.263-.64.895.895 0 00-.263-.642L10.302.263A.897.897 0 009.663 0a.897.897 0 00-.638.263l-.54.541a.895.895 0 00-.264.639c0 .242.093.456.263.626L12 5.572H.917A.936.936 0 000 6.5v.765c0 .498.431.894.93.894z"
+              fill="#fff" />
+          </svg>
+        </div>
+        <div class="main-catalog__details">
+          <ul class="main-catalog__category-list">
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Айва</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Арония</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Барбарис</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Берсклет</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Бирючина</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Бобовник</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Буделя</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Бузина</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Сирень</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Вейгела</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Ива</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Гибикус</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Гортензия</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Дейция</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Дерен</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Жимолость</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Ирга</a>
+            </li>
+
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Калина</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Керия</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Кольквиция</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Кизил</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Кизильник</a>
+            </li>
+
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Лапчатка</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Падуб</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Пузыреплодник</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Ракитник</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Рододендрон</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Самшит</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Скумпия</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Спирея</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Снежноягодник</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Форзиция</a>
+            </li>
+          </ul>
+          <a href="" class="main-catalog__button">Смотреть все
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 50 50">
+              <defs />
+              <rect width="50" height="50" rx="25" />
+              <path
+                d="M17.67 26.3l-.03-.01H28.7l-3.48 3.48a.9.9 0 00-.26.65c0 .24.1.47.26.64l.54.54a.9.9 0 001.28 0L33 25.64a.9.9 0 00.26-.64.9.9 0 00-.26-.64l-5.96-5.96a.9.9 0 00-.64-.26.9.9 0 00-.64.26l-.54.54a.9.9 0 000 1.27l3.52 3.5H17.66c-.5 0-.92.43-.92.93v.76c0 .5.43.9.93.9z" />
+            </svg>
+          </a>
+        </div>
+      </li>
+      <!-- Хвойные кустарники -->
+      <li class="main-catalog__item">
+        <img class="main-catalog__photo" src="./img/main-catalog/2/2.jpg" alt="фотография каталога" width="485"
+          height="215">
+        <div class="main-catalog__item-header">
+          <h3 class="main-catalog__title">Хвойные кустарники</h3>
+          <svg class="main-catalog__icon" width="17" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M.93 8.158l-.027-.006H11.96l-3.476 3.483c-.17.17-.263.4-.263.643 0 .241.093.47.263.64l.54.542c.171.17.398.264.64.264a.896.896 0 00.638-.264l5.958-5.957a.895.895 0 00.263-.64.895.895 0 00-.263-.642L10.302.263A.897.897 0 009.663 0a.897.897 0 00-.638.263l-.54.541a.895.895 0 00-.264.639c0 .242.093.456.263.626L12 5.572H.917A.936.936 0 000 6.5v.765c0 .498.431.894.93.894z"
+              fill="#fff" />
+          </svg>
+        </div>
+        <div class="main-catalog__details">
+          <ul class="main-catalog__category-list">
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Лиственница</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Сосна</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Туя</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Тис</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Ель</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Можжевельник</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Пихта</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Кипарис</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Сциадопитис</a>
+            </li>
+          </ul>
+          <a href="" class="main-catalog__button">Смотреть все
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 50 50">
+              <defs />
+              <rect width="50" height="50" rx="25" />
+              <path
+                d="M17.67 26.3l-.03-.01H28.7l-3.48 3.48a.9.9 0 00-.26.65c0 .24.1.47.26.64l.54.54a.9.9 0 001.28 0L33 25.64a.9.9 0 00.26-.64.9.9 0 00-.26-.64l-5.96-5.96a.9.9 0 00-.64-.26.9.9 0 00-.64.26l-.54.54a.9.9 0 000 1.27l3.52 3.5H17.66c-.5 0-.92.43-.92.93v.76c0 .5.43.9.93.9z" />
+            </svg>
+          </a>
+        </div>
+      </li>
+      <!-- Лианы -->
+      <li class="main-catalog__item">
+        <img class="main-catalog__photo" src="./img/main-catalog/2/3.jpg" alt="фотография каталога" width="485"
+          height="215">
+        <div class="main-catalog__item-header">
+          <h3 class="main-catalog__title">Лианы</h3>
+          <svg class="main-catalog__icon" width="17" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M.93 8.158l-.027-.006H11.96l-3.476 3.483c-.17.17-.263.4-.263.643 0 .241.093.47.263.64l.54.542c.171.17.398.264.64.264a.896.896 0 00.638-.264l5.958-5.957a.895.895 0 00.263-.64.895.895 0 00-.263-.642L10.302.263A.897.897 0 009.663 0a.897.897 0 00-.638.263l-.54.541a.895.895 0 00-.264.639c0 .242.093.456.263.626L12 5.572H.917A.936.936 0 000 6.5v.765c0 .498.431.894.93.894z"
+              fill="#fff" />
+          </svg>
+        </div>
+        <div class="main-catalog__details">
+          <ul class="main-catalog__category-list">
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Виноград</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Кампсис</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Клематис</a>
+            </li>
+          </ul>
+          <a href="" class="main-catalog__button">Смотреть все
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 50 50">
+              <defs />
+              <rect width="50" height="50" rx="25" />
+              <path
+                d="M17.67 26.3l-.03-.01H28.7l-3.48 3.48a.9.9 0 00-.26.65c0 .24.1.47.26.64l.54.54a.9.9 0 001.28 0L33 25.64a.9.9 0 00.26-.64.9.9 0 00-.26-.64l-5.96-5.96a.9.9 0 00-.64-.26.9.9 0 00-.64.26l-.54.54a.9.9 0 000 1.27l3.52 3.5H17.66c-.5 0-.92.43-.92.93v.76c0 .5.43.9.93.9z" />
+            </svg>
+          </a>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+  <section class="main-catalog">
+  <div class="wrapper">
+    <h2 class="title">Катал<span class="decorate">о</span>г цветов для сада</h2>
+
+    <ul class="main-catalog__list">
+      <!-- Однолетние цветы -->
+      <li class="main-catalog__item">
+        <img class="main-catalog__photo" src="./img/main-catalog/3/1.jpg" alt="фотография каталога" width="485"
+          height="215">
+        <div class="main-catalog__item-header">
+          <h3 class="main-catalog__title">Однолетние цветы</h3>
+          <svg class="main-catalog__icon" width="17" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M.93 8.158l-.027-.006H11.96l-3.476 3.483c-.17.17-.263.4-.263.643 0 .241.093.47.263.64l.54.542c.171.17.398.264.64.264a.896.896 0 00.638-.264l5.958-5.957a.895.895 0 00.263-.64.895.895 0 00-.263-.642L10.302.263A.897.897 0 009.663 0a.897.897 0 00-.638.263l-.54.541a.895.895 0 00-.264.639c0 .242.093.456.263.626L12 5.572H.917A.936.936 0 000 6.5v.765c0 .498.431.894.93.894z"
+              fill="#fff" />
+          </svg>
+        </div>
+        <div class="main-catalog__details">
+          <ul class="main-catalog__category-list">
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Газания</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Сурфиния</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Фуксия</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Хлорофитум</a>
+            </li>
+          </ul>
+          <a href="" class="main-catalog__button">Смотреть все
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 50 50">
+              <defs />
+              <rect width="50" height="50" rx="25" />
+              <path
+                d="M17.67 26.3l-.03-.01H28.7l-3.48 3.48a.9.9 0 00-.26.65c0 .24.1.47.26.64l.54.54a.9.9 0 001.28 0L33 25.64a.9.9 0 00.26-.64.9.9 0 00-.26-.64l-5.96-5.96a.9.9 0 00-.64-.26.9.9 0 00-.64.26l-.54.54a.9.9 0 000 1.27l3.52 3.5H17.66c-.5 0-.92.43-.92.93v.76c0 .5.43.9.93.9z" />
+            </svg>
+          </a>
+        </div>
+      </li>
+      <!-- Многолетние цветы -->
+      <li class="main-catalog__item main-catalog__item--big">
+        <img class="main-catalog__photo" src="./img/main-catalog/3/2.jpg" alt="фотография каталога" width="485"
+          height="215">
+        <div class="main-catalog__item-header">
+          <h3 class="main-catalog__title">Многолетние цветы</h3>
+          <svg class="main-catalog__icon" width="17" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M.93 8.158l-.027-.006H11.96l-3.476 3.483c-.17.17-.263.4-.263.643 0 .241.093.47.263.64l.54.542c.171.17.398.264.64.264a.896.896 0 00.638-.264l5.958-5.957a.895.895 0 00.263-.64.895.895 0 00-.263-.642L10.302.263A.897.897 0 009.663 0a.897.897 0 00-.638.263l-.54.541a.895.895 0 00-.264.639c0 .242.093.456.263.626L12 5.572H.917A.936.936 0 000 6.5v.765c0 .498.431.894.93.894z"
+              fill="#fff" />
+          </svg>
+        </div>
+        <div class="main-catalog__details">
+          <ul class="main-catalog__category-list">
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Астра</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Антенария</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Армерия</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Астранция</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Астильба</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Азалия</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Бадан</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Бруннера</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Бузульник</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Вальдштейния</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Вероника</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Виола</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Волжанка</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Вереск</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Гвоздика</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Гейхера</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Гелениум</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Герань</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Колокольчики</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Эхинацея</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Живучка</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Иберис</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Камнеломка</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Книфофия</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Кореопсис</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Нивяник</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Купальница</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Лиатрис</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Лилия</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Лихнис</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Лаванда</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Морозник</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Мшанка</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Паахизандра</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Дербенник</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Полынь</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Посконник</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Пенстемон</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Перовския</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Платикодон</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Скабиоза</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Сныть</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Страусник</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Флокс</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Хоста</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Хризантема</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Шалфей</a>
+            </li>
+          </ul>
+          <a href="" class="main-catalog__button">Смотреть все
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 50 50">
+              <defs />
+              <rect width="50" height="50" rx="25" />
+              <path
+                d="M17.67 26.3l-.03-.01H28.7l-3.48 3.48a.9.9 0 00-.26.65c0 .24.1.47.26.64l.54.54a.9.9 0 001.28 0L33 25.64a.9.9 0 00.26-.64.9.9 0 00-.26-.64l-5.96-5.96a.9.9 0 00-.64-.26.9.9 0 00-.64.26l-.54.54a.9.9 0 000 1.27l3.52 3.5H17.66c-.5 0-.92.43-.92.93v.76c0 .5.43.9.93.9z" />
+            </svg>
+          </a>
+        </div>
+      </li>
+      <!-- Саженцы роз -->
+      <li class="main-catalog__item">
+        <img class="main-catalog__photo" src="./img/main-catalog/3/3.jpg" alt="фотография каталога" width="485"
+          height="215">
+        <div class="main-catalog__item-header">
+          <h3 class="main-catalog__title">Саженцы роз</h3>
+          <svg class="main-catalog__icon" width="17" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M.93 8.158l-.027-.006H11.96l-3.476 3.483c-.17.17-.263.4-.263.643 0 .241.093.47.263.64l.54.542c.171.17.398.264.64.264a.896.896 0 00.638-.264l5.958-5.957a.895.895 0 00.263-.64.895.895 0 00-.263-.642L10.302.263A.897.897 0 009.663 0a.897.897 0 00-.638.263l-.54.541a.895.895 0 00-.264.639c0 .242.093.456.263.626L12 5.572H.917A.936.936 0 000 6.5v.765c0 .498.431.894.93.894z"
+              fill="#fff" />
+          </svg>
+        </div>
+        <div class="main-catalog__details">
+          <ul class="main-catalog__category-list">
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Роза бордюрная</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Шиповник</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Роза парковая</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Роза плетистая</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Роза чайно-гибридная</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Роза шраб</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Роза почвопокровная</a>
+            </li>
+          </ul>
+          <a href="" class="main-catalog__button">Смотреть все
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 50 50">
+              <defs />
+              <rect width="50" height="50" rx="25" />
+              <path
+                d="M17.67 26.3l-.03-.01H28.7l-3.48 3.48a.9.9 0 00-.26.65c0 .24.1.47.26.64l.54.54a.9.9 0 001.28 0L33 25.64a.9.9 0 00.26-.64.9.9 0 00-.26-.64l-5.96-5.96a.9.9 0 00-.64-.26.9.9 0 00-.64.26l-.54.54a.9.9 0 000 1.27l3.52 3.5H17.66c-.5 0-.92.43-.92.93v.76c0 .5.43.9.93.9z" />
+            </svg>
+          </a>
+        </div>
+      </li>
+      <!-- Злаки -->
+      <li class="main-catalog__item">
+        <img class="main-catalog__photo" src="./img/main-catalog/3/4.jpg" alt="фотография каталога" width="485"
+          height="215">
+        <div class="main-catalog__item-header">
+          <h3 class="main-catalog__title">Злаки</h3>
+          <svg class="main-catalog__icon" width="17" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M.93 8.158l-.027-.006H11.96l-3.476 3.483c-.17.17-.263.4-.263.643 0 .241.093.47.263.64l.54.542c.171.17.398.264.64.264a.896.896 0 00.638-.264l5.958-5.957a.895.895 0 00.263-.64.895.895 0 00-.263-.642L10.302.263A.897.897 0 009.663 0a.897.897 0 00-.638.263l-.54.541a.895.895 0 00-.264.639c0 .242.093.456.263.626L12 5.572H.917A.936.936 0 000 6.5v.765c0 .498.431.894.93.894z"
+              fill="#fff" />
+          </svg>
+        </div>
+        <div class="main-catalog__details">
+          <ul class="main-catalog__category-list">
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Аир</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Бор</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Бутелуа</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Вейник</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Келерия</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Луговик</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Мисканутс</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Молиния</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Ожика</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Осока</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Просо</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Сеслерия</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Хаконехлоа</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Императа</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Лириопа</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Пеннисетум</a>
+            </li>
+          </ul>
+          <a href="" class="main-catalog__button">Смотреть все
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 50 50">
+              <defs />
+              <rect width="50" height="50" rx="25" />
+              <path
+                d="M17.67 26.3l-.03-.01H28.7l-3.48 3.48a.9.9 0 00-.26.65c0 .24.1.47.26.64l.54.54a.9.9 0 001.28 0L33 25.64a.9.9 0 00.26-.64.9.9 0 00-.26-.64l-5.96-5.96a.9.9 0 00-.64-.26.9.9 0 00-.64.26l-.54.54a.9.9 0 000 1.27l3.52 3.5H17.66c-.5 0-.92.43-.92.93v.76c0 .5.43.9.93.9z" />
+            </svg>
+          </a>
+        </div>
+      </li>
+      <!-- Суккуленты для сада -->
+      <li class="main-catalog__item">
+        <img class="main-catalog__photo" src="./img/main-catalog/3/5.jpg" alt="фотография каталога" width="485"
+          height="215">
+        <div class="main-catalog__item-header">
+          <h3 class="main-catalog__title">Суккуленты для сада</h3>
+          <svg class="main-catalog__icon" width="17" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M.93 8.158l-.027-.006H11.96l-3.476 3.483c-.17.17-.263.4-.263.643 0 .241.093.47.263.64l.54.542c.171.17.398.264.64.264a.896.896 0 00.638-.264l5.958-5.957a.895.895 0 00.263-.64.895.895 0 00-.263-.642L10.302.263A.897.897 0 009.663 0a.897.897 0 00-.638.263l-.54.541a.895.895 0 00-.264.639c0 .242.093.456.263.626L12 5.572H.917A.936.936 0 000 6.5v.765c0 .498.431.894.93.894z"
+              fill="#fff" />
+          </svg>
+        </div>
+        <div class="main-catalog__details">
+          <ul class="main-catalog__category-list">
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Очиток</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Молодило</a>
+            </li>
+          </ul>
+          <a href="" class="main-catalog__button">Смотреть все
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 50 50">
+              <defs />
+              <rect width="50" height="50" rx="25" />
+              <path
+                d="M17.67 26.3l-.03-.01H28.7l-3.48 3.48a.9.9 0 00-.26.65c0 .24.1.47.26.64l.54.54a.9.9 0 001.28 0L33 25.64a.9.9 0 00.26-.64.9.9 0 00-.26-.64l-5.96-5.96a.9.9 0 00-.64-.26.9.9 0 00-.64.26l-.54.54a.9.9 0 000 1.27l3.52 3.5H17.66c-.5 0-.92.43-.92.93v.76c0 .5.43.9.93.9z" />
+            </svg>
+          </a>
+        </div>
+      </li>
+      <!-- Пряные травы -->
+      <li class="main-catalog__item">
+        <img class="main-catalog__photo" src="./img/main-catalog/3/6.jpg" alt="фотография каталога" width="485"
+          height="215">
+        <div class="main-catalog__item-header">
+          <h3 class="main-catalog__title">Пряные травы</h3>
+          <svg class="main-catalog__icon" width="17" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M.93 8.158l-.027-.006H11.96l-3.476 3.483c-.17.17-.263.4-.263.643 0 .241.093.47.263.64l.54.542c.171.17.398.264.64.264a.896.896 0 00.638-.264l5.958-5.957a.895.895 0 00.263-.64.895.895 0 00-.263-.642L10.302.263A.897.897 0 009.663 0a.897.897 0 00-.638.263l-.54.541a.895.895 0 00-.264.639c0 .242.093.456.263.626L12 5.572H.917A.936.936 0 000 6.5v.765c0 .498.431.894.93.894z"
+              fill="#fff" />
+          </svg>
+        </div>
+        <div class="main-catalog__details">
+          <ul class="main-catalog__category-list">
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Шалфей</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Мята</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Монарда</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Тимьян</a>
+            </li>
+            <li class="main-catalog__category-item">
+              <a class="main-catalog__category-link" href="#">Бергамот-Монарда</a>
+            </li>
+          </ul>
+          <a href="" class="main-catalog__button">Смотреть все
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 50 50">
+              <defs />
+              <rect width="50" height="50" rx="25" />
+              <path
+                d="M17.67 26.3l-.03-.01H28.7l-3.48 3.48a.9.9 0 00-.26.65c0 .24.1.47.26.64l.54.54a.9.9 0 001.28 0L33 25.64a.9.9 0 00.26-.64.9.9 0 00-.26-.64l-5.96-5.96a.9.9 0 00-.64-.26.9.9 0 00-.64.26l-.54.54a.9.9 0 000 1.27l3.52 3.5H17.66c-.5 0-.92.43-.92.93v.76c0 .5.43.9.93.9z" />
+            </svg>
+          </a>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+  <section class="main-catalog">
+  <div class="wrapper">
+    <h2 class="title">Катал<span class="decorate">о</span>г ягодных кустарников</h2>
+
+    <ul class="main-catalog__list main-catalog__list--simple">
+
+      <li class="main-catalog__item">
+        <img class="main-catalog__photo" src="./img/main-catalog/4/1.jpg" alt="фотография каталога" width="485"
+          height="215">
+        <div class="main-catalog__details">
+          <h3 class="main-catalog__title">Крыжовник</h3>
+          <a href="" class="main-catalog__button">Подробнее</a>
+        </div>
+      </li>
+      <li class="main-catalog__item">
+        <img class="main-catalog__photo" src="./img/main-catalog/4/11.jpg" alt="фотография каталога" width="485" height="215">
+        <div class="main-catalog__details">
+          <h3 class="main-catalog__title">Боярышник</h3>
+          <a href="" class="main-catalog__button">Подробнее</a>
+        </div>
+      </li>
+      <li class="main-catalog__item">
+        <img class="main-catalog__photo" src="./img/main-catalog/4/12.jpg" alt="фотография каталога" width="485" height="215">
+        <div class="main-catalog__details">
+          <h3 class="main-catalog__title">Ирга</h3>
+          <a href="" class="main-catalog__button">Подробнее</a>
+        </div>
+      </li>
+      <li class="main-catalog__item main-catalog__item--long">
+        <img class="main-catalog__photo" src="./img/main-catalog/4/7.jpg" alt="фотография каталога" width="485" height="215">
+        <div class="main-catalog__details">
+          <h3 class="main-catalog__title">Клубника</h3>
+          <a href="" class="main-catalog__button">Подробнее</a>
+        </div>
+      </li>
+      <li class="main-catalog__item">
+        <img class="main-catalog__photo" src="./img/main-catalog/4/13.jpg" alt="фотография каталога" width="485" height="215">
+        <div class="main-catalog__details">
+          <h3 class="main-catalog__title">Арония</h3>
+          <a href="" class="main-catalog__button">Подробнее</a>
+        </div>
+      </li>
+      <li class="main-catalog__item">
+        <img class="main-catalog__photo" src="./img/main-catalog/4/14.jpg" alt="фотография каталога" width="485" height="215">
+        <div class="main-catalog__details">
+          <h3 class="main-catalog__title">Кизил</h3>
+          <a href="" class="main-catalog__button">Подробнее</a>
+        </div>
+      </li>
+      <li class="main-catalog__item">
+        <img class="main-catalog__photo" src="./img/main-catalog/4/2.jpg" alt="фотография каталога" width="485" height="215">
+        <div class="main-catalog__details">
+          <h3 class="main-catalog__title">Актинидия</h3>
+          <a href="" class="main-catalog__button">Подробнее</a>
+        </div>
+      </li>
+      <li class="main-catalog__item">
+        <img class="main-catalog__photo" src="./img/main-catalog/4/3.jpg" alt="фотография каталога" width="485" height="215">
+        <div class="main-catalog__details">
+          <h3 class="main-catalog__title">Гуми</h3>
+          <a href="" class="main-catalog__button">Подробнее</a>
+        </div>
+      </li>
+      <li class="main-catalog__item">
+        <img class="main-catalog__photo" src="./img/main-catalog/4/5.jpg" alt="фотография каталога" width="485" height="215">
+        <div class="main-catalog__details">
+          <h3 class="main-catalog__title">Жимолость</h3>
+          <a href="" class="main-catalog__button">Подробнее</a>
+        </div>
+      </li>
+      <li class="main-catalog__item">
+        <img class="main-catalog__photo" src="./img/main-catalog/4/4.jpg" alt="фотография каталога" width="485" height="215">
+        <div class="main-catalog__details">
+          <h3 class="main-catalog__title">Лимонник</h3>
+          <a href="" class="main-catalog__button">Подробнее</a>
+        </div>
+      </li>
+      <li class="main-catalog__item">
+        <img class="main-catalog__photo" src="./img/main-catalog/4/6.jpg" alt="фотография каталога" width="485" height="215">
+        <div class="main-catalog__details">
+          <h3 class="main-catalog__title">Голубика</h3>
+          <a href="" class="main-catalog__button">Подробнее</a>
+        </div>
+      </li>
+      <li class="main-catalog__item">
+        <img class="main-catalog__photo" src="./img/main-catalog/4/10.jpg" alt="фотография каталога" width="485" height="215">
+        <div class="main-catalog__details">
+          <h3 class="main-catalog__title">Малина</h3>
+          <a href="" class="main-catalog__button">Подробнее</a>
+        </div>
+      </li>
+      <li class="main-catalog__item">
+        <img class="main-catalog__photo" src="./img/main-catalog/4/8.jpg" alt="фотография каталога" width="485" height="215">
+        <div class="main-catalog__details">
+          <h3 class="main-catalog__title">Ежевика</h3>
+          <a href="" class="main-catalog__button">Подробнее</a>
+        </div>
+      </li>
+      <li class="main-catalog__item">
+        <img class="main-catalog__photo" src="./img/main-catalog/4/9.jpg" alt="фотография каталога" width="485" height="215">
+        <div class="main-catalog__details">
+          <h3 class="main-catalog__title">Смородина</h3>
+          <a href="" class="main-catalog__button">Подробнее</a>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
 
 </main>
 <footer>
     <h1>Это подвал сайта</h1>
 </footer>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="./js/main.js"></script>
 </body>
 
